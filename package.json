@@ -1,0 +1,78 @@
+{
+	"name": "portfolio",
+	"version": "0.1.0",
+	"description": "Portfolio App that is built using ReactJS.",
+	"author": "Rakesh",
+	"keywords": [
+		"React",
+		"Docker React",
+		"Travis CI",
+		"React Portfolio",
+		"Rakesh Cheekatimala"
+	],
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/user-event": "^7.1.2",
+		"antd": "^3.26.7",
+		"prop-types": "^15.7.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-scripts": "3.3.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"e2e": "cypress open",
+		"storybook": "start-storybook -p 9009 -s public",
+		"build-storybook": "build-storybook -s public",
+		"coverage": "yarn test --coverage --watchAll=false --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/**/*.stories.js",
+		"visual:testing": "percy exec -- cypress run"
+	},
+	"jest": {
+		"coveragePathIgnorePatterns": [
+			"src/index.js",
+			"src/serviceWorker.js"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"eslintConfig": {
+		"extends": "react-app",
+		"globals": {
+			"cy": true,
+			"context": true
+		}
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"devDependencies": {
+		"@percy/cypress": "^2.2.0",
+		"@storybook/addon-actions": "^5.2.8",
+		"@storybook/addon-links": "^5.2.8",
+		"@storybook/addons": "^5.2.8",
+		"@storybook/react": "^5.2.8",
+		"@testing-library/react": "^9.4.0",
+		"cypress": "^3.8.1",
+		"husky": "^4.0.6",
+		"lint-staged": "^9.5.0",
+		"node-sass": "^4.13.0",
+		"prettier": "^1.19.1",
+		"react-test-renderer": "^16.12.0"
+	}
+}
