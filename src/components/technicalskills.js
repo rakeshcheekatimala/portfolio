@@ -1,8 +1,9 @@
 import React from 'react';
 import VideoMp4 from './../img/video.mp4';
 import VideoWebm from './../img/video.webm';
-import marySmith from './../img/nat-8.jpg';
-import jackWilson from './../img/nat-9.jpg';
+import frontEnd from './../img/frontend.jpeg';
+import backEnd from './../img/backend.jpeg';
+import infra from './../img/cloud.jpeg';
 import technicalData from './../data/portfolio';
 
 const TechnicalSkill = () => {
@@ -27,7 +28,7 @@ const TechnicalSkill = () => {
 			<div className="row">
 				<div className="story">
 					<figure className="story__shape">
-						<img src={marySmith} alt="Person on a tour" className="story__img" />
+						<img src={frontEnd} alt="Person on a tour" className="story__img" />
 						<figcaption className="story__caption">Front End</figcaption>
 					</figure>
 					<div className="story__text">
@@ -46,7 +47,7 @@ const TechnicalSkill = () => {
 			<div className="row">
 				<div className="story">
 					<figure className="story__shape">
-						<img src={jackWilson} alt="Person on a tour" className="story__img" />
+						<img src={backEnd} alt="Person on a tour" className="story__img" />
 						<figcaption className="story__caption">Back End</figcaption>
 					</figure>
 					<div className="story__text">
@@ -64,7 +65,7 @@ const TechnicalSkill = () => {
 			<div className="row">
 				<div className="story">
 					<figure className="story__shape">
-						<img src={jackWilson} alt="Person on a tour" className="story__img" />
+						<img src={infra} alt="Person on a tour" className="story__img" />
 						<figcaption className="story__caption">Infra Skills</figcaption>
 					</figure>
 					<div className="story__text">
