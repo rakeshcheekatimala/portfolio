@@ -50,10 +50,10 @@ const Skills = () => {
             <h3 className="heading-tertiary u-margin-bottom-small">Personal Interests</h3>
             <ul className="feature-box__hobbies">
               <li>
-                <span> Travelling</span> <br />
+                <span> Travelling </span> <br />
               </li>
               <li>
-                <span> Cooking</span>
+                <span> Cooking </span>
                 <br />
               </li>
               <li>
@@ -63,7 +63,7 @@ const Skills = () => {
                 <span> Philosophy</span>
               </li>
               <li>
-                <span> Netflix & Chill</span>
+                <span> Netflix </span>
               </li>
             </ul>
           </div>
